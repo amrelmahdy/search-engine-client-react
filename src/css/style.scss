@@ -1,0 +1,133 @@
+@import "rules";
+@import "basics";
+@import "variables";
+
+body {
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.sidebar {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .08);
+
+  .logo {
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+  }
+
+  .faceted-navigation {
+    .search-header {
+      margin-top: 20px;
+      text-align: center;
+      color: #FFF;
+      background-color: $mainColor;
+      padding: 10px;
+    }
+
+    .filter {
+      padding-left: 10px;
+
+      .filter-header {
+        span {
+          font-weight: bold;
+          color: $filterHeaderColor;
+        }
+
+        i {
+          color: $filterHeaderColor;
+          margin-right: 10px;
+        }
+      }
+
+      .filter-body {
+        .filter-item {
+          a {
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          input {
+            margin-right: 5px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.search-box {
+  display: flex;
+
+  input {
+    flex: 4;
+    height: 50px;
+    border-radius: 50px 0 0 50px;
+
+    &::placeholder {
+      padding-left: 10px;
+    }
+  }
+
+  button {
+    height: 50px;
+    flex: 1;
+    border-radius: 0 50px 50px 0;
+  }
+}
+
+.pr-list {
+  margin-top: 30px;
+  margin-right: 17px;
+
+  .pr {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .08);
+    margin-bottom: 15px;
+
+    .pr-image {
+
+      text-align: center;
+      overflow: hidden;
+      width: auto;
+      height: 200px;
+      background-color: #FFF;
+      border-right: 1px solid #eee;
+
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+
+
+    .pr-info {
+
+      background-color: #FFF;
+      height: 200px;
+
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .name {
+        color: $mainColor;
+        font-family: 'Rubik', sans-serif;
+        text-transform: capitalize;
+        line-height: 1.4;
+
+      }
+
+      .brand {
+        color: #7f807a;
+        font-weight: bold;
+      }
+
+      .price {
+        color: $mainDangerColor;
+        font-weight: bold;
+      }
+    }
+  }
+}

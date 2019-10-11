@@ -1,0 +1,155 @@
+@for $i from 1 through 1000{
+  .height-#{$i} {
+    height: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 1000{
+  .margin-top-#{$i} {
+    margin-top: #{$i}px;
+  }
+}
+
+@for $i from 1 through 1000{
+  .margin-bottom-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}
+
+
+
+@for $i from 1 through 1000{
+  .width-#{$i}{
+    width: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 1000{
+  .width-percentage-#{$i}{
+    width: #{$i + "%"};
+  }
+}
+
+@for $i from 1 through 1000{
+  .font-#{$i}{
+    font-size: #{$i}px !important;
+  }
+}
+
+
+
+
+@for $i from 1 through 1000{
+  .padding-#{$i}{
+    padding: #{$i}px !important;
+  }
+}
+
+
+.border-bottom{
+  border-bottom: 1px solid #eef6f8;
+}
+.border-left {
+  border-left: 1px solid #eee;
+}
+.border-right {
+  border-right: 1px solid #eee;
+}
+.flex{
+  display: flex;
+}
+
+.flex-direction-row{
+  flex-direction: row;
+}
+
+.flex-direction-col{
+  flex-direction: column;
+}
+
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.right-hr{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.white-right-hr{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 0;
+  border-right: 1px solid white;
+}
+
+.trim{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flex-center{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.cursor-not-allowed{
+  cursor: not-allowed !important;
+}
+
+.curvy-input-30{
+  border-radius: 30px;
+}
+
+.pointer-event-none{
+  pointer-events: none;
+}
+.relative{
+  position: relative;
+}
+.btn-style-less{
+  background: none;
+  border:none;
+}
+.absolute{
+  position: absolute;
+}
+.break-all{
+  word-break: break-all;
+}
+.none{
+  display: none;
+}
+.display-flex{
+  display: flex;
+}
+.flex-column-options{
+  flex: 0 0 100%;
+}
+.block{
+  display: block;
+}
+
+
+
+
+
+.shadow-4d{
+  box-shadow: 0 0 10px 1px rgba(102, 102, 102, 0.35) !important
+  //box-shadow: rgba(102, 102, 102, 0.35) 0px 2px 4px 0px !important;
+}
+
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+}
+
